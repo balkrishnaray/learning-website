@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgb(116, 16, 35);
+        }
+        #box1{
+            background-color: aqua;
+            position: relative;
+            top: 30px;
+            z-index: 70;
+            
+            
+        }
+        #box2{
+            background-color: green;
+            position: relative;
+            top:1px;
+            z-index: 60;
+            
+            
+            /* z-index will work only when position is sticky relative fixed absolute; */
+            
+        }
+        #box3{
+            background-color: blue;
+             /* visibility: hidden; */
+              /*remove the block but there is gap */
+            /* display: none;  
+             remove the entire block and leave no gap */ 
+        }
+        #box4{
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

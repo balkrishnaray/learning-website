@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+
+</head>
+<style>
+    h1 {
+        background-color: aqua;
+        text-align: center;
+        font-weight: bold;
+    }
+/* if p is inside li which is inside div then css is applies*/
+    /* div li p {
+        background-color: green;
+        font-weight: bold;
+        color: antiquewhite;
+    }  */
+
+    /* if p is inside div then css is applied   */
+    /* div>p {
+        color: yellow;
+    } */
+
+    /* if p sibling is div/ right after div then css is applied*/
+    div + p {
+        background-color: chocolate;
+    }
+
+    /* li + p{
+        background-color: blue;
+    } */
+</style>
+
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ol type="A">
+                <li class="item">
+                    <p>This a changing paragraph</p>
+                </li>
+                <li>
+                    <p>This is second paragraph</p>
+                </li>
+                <p>This is a paragraph</p>
+            </ol>
+
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript string functions</title>
+</head>
+<body>
+    
+    
+    <script>
+    let sen = " Hello i am balkrishna ";
+    console.log(sen);
+    //first occurence is written..
+    var position = sen.indexOf('H');
+    console.log(position);
+    var pos = sen.lastIndexOf('a');
+    console.log(pos);
+    // slice takes negative value 
+    var substr1 = sen.slice(1,5);
+    //takes from 0
+    var substr3 = sen.substring(1,9);
+    //takes from 1
+    var substr2 = sen.substr(1,3);
+    //replace first with second
+    var replaced = sen.replace('Hello ',' Good Morning ');
+
+    console.log(substr3); 
+    console.log(replaced);
+    console.log(sen.toLowerCase());
+    console.log(sen.toUpperCase());
+    
+    var whitespace = "  This   contain     whitespaces   ";
+    console.log(whitespace);
+    //trim cut start and end spaces.
+    console.log(whitespace.trim());
+
+    let a = sen.charAt(1);
+    console.log(a);
+    </script>
+</body>
+</html>

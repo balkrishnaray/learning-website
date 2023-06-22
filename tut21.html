@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: 'Manrope', sans-serif;
+        }
+        .container{ 
+            background-color: rgb(225, 233, 228);
+            border: 2px solid rgb(133, 38, 133);
+            width: 800px;
+            margin: 50px auto;
+            
+
+        }
+        .item{
+            border: 2px solid rgb(3, 52, 52);
+            padding: 10px 5px;
+            border-radius: 10px;
+            margin: 10px 5px;
+            background-color: rgb(198, 227, 227);
+        }
+        #chocolate{
+            float: left;
+            width: 48%;
+        }
+        #vegetables{
+            float: right;
+            width: 48%;
+        }
+        #meat{
+            clear: both;
+            width: 99%;
+        }
+
+        p,h3{
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+             width: 800px;
+             margin: 30px auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+        <div id="chocolate" class="item">
+            <h3>Chocolate</h3>
+            <p id="chocolatepara" class="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis modi sapiente consequatur ex ipsa, natus pariatur asperiores deleniti repudiandae eveniet, fugit beatae illum hic adipisci voluptates, fugiat iste voluptate perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aperiam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, id.</p>
+
+        </div>
+
+        <div id="vegetables" class="item">
+            <h3>Vegetables</h3>
+            <p id="vegetablepara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorem quasi facilis laborum beatae? At nulla excepturi deleniti. Consectetur non, minima ducimus accusantium amet voluptate vero labore aliquam atque consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quos! Lorem ipsum dolor sit amet, consectetur </p>
+
+        </div>
+        <div id="meat" class="item">
+            <h3>Meat</h3>
+            <p id="meatpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum repellat fugiat molestiae aliquam amet facilis pariatur corrupti exercitationem placeat, modi magnam facere. Pariatur ab, consequatur debitis consequuntur doloremque voluptatum vero.</p>
+
+        </div>
+        <div id="flower" class="item">
+            <h3>Flower</h3>
+            <p id="flowerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum repellat fugiat molestiae aliquam amet facilis pariatur corrupti exercitationem placeat, modi magnam facere. Pariatur ab, consequatur debitis consequuntur doloremque voluptatum vero.</p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
